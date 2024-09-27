@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loveCalculatorFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.loveapi.ui.fragments.loveCalculator.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.loveapi.ui.fragments.onBoard.OnBoardFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
+    <fragment
+        android:id="@+id/loveCalculatorFragment"
+        android:name="com.example.loveapi.ui.fragments.loveCalculator.LoveCalculatorFragment"
+        android:label="fragment_love_calculator"
+        tools:layout="@layout/fragment_love_calculator"/>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.loveapi.ui.fragments.loveCalculator.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.loveapi.ui.fragments.loveCalculator.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>
